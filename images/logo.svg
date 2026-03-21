@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" width="400" height="60">
+  <!-- Wing/swoosh icon -->
+  <g transform="translate(0,5)">
+    <path d="M0,45 Q10,20 25,10 Q30,25 20,45 Z" fill="#2196F3"/>
+    <path d="M10,42 Q20,15 35,5 Q38,20 28,42 Z" fill="#42A5F5"/>
+    <path d="M20,40 Q30,10 45,2 Q46,18 36,40 Z" fill="#FFC107"/>
+    <path d="M30,38 Q38,8 52,0 Q52,15 42,38 Z" fill="#FFB300"/>
+  </g>
+  <!-- Myers Clark text -->
+  <text x="60" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="bold" fill="#1a1a1a" letter-spacing="1">Myers Clark</text>
+  <!-- Tagline -->
+  <text x="60" y="54" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#555" letter-spacing="0.5">Serious about you and your ambitions</text>
+</svg>
