@@ -1730,3 +1730,13 @@ body {
     margin-bottom: var(--spacing-xl);
   }
 }
+
+/* ---- LAPTOP SCREEN OPTIMISATION (DRE-17) ---- */
+/* Targets 769px–1440px: standard laptop & notebook screens */
+/* Note: hero uses content-based height (no min-height vh), not affected */
+@media (min-width: 769px) and (max-width: 1440px) {
+  :root {
+    --spacing-3xl: 4.5rem;
+    --spacing-2xl: 3.5rem;
+  }
+}
