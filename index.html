@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Myers Clark Chartered Accountants | Financial Partnership for Ambitious Businesses</title>
-  <meta name="description" content="Get serious about your growth. Myers Clark provides strategic accounting and tax planning for ambitious SME owners.">
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Myers Clark Chartered Accountants | Strategic Financial Partnership for Ambitious SMEs</title>
+  <meta name="description" content="Myers Clark — strategic accounting and tax planning for ambitious SME owners in Watford and Hertfordshire. Est. 1912. Book your free consultation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -16,580 +18,448 @@
   </script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo-section">
-        <img src="images/logo.svg" alt="Myers Clark Chartered Accountants" class="logo">
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Myers Clark Chartered Accountants — home">
+        <img src="images/logo.svg" alt="Myers Clark Chartered Accountants" class="nav__logo-img">
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#about" class="nav__link">Who We Are</a>
+        <a href="#blog" class="nav__link">Blog</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <button class="btn btn--nav js-cta" aria-label="Book a consultation">Book a Consultation</button>
       </div>
-      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="nav__burger" id="navBurger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
       </button>
-      <div class="nav-links">
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#about" class="nav-link">Who We Are</a>
-        <a href="#blog" class="nav-link">Blog</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        <button class="cta-button nav-cta" aria-label="Book a consultation">Book a Consultation</button>
-      </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-background"></div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="hero-headline">Get Serious About Your Growth</h1>
-        <p class="hero-subheadline">You're building something ambitious. You deserve a financial partner who knows your numbers, believes in your vision, and pushes your thinking.</p>
-        <div class="hero-ctas">
-          <button class="cta-button cta-primary" aria-label="Book your free consultation">Book Your Free Consultation</button>
-          <button class="cta-button cta-secondary" aria-label="Download the guide">Get the Guide</button>
-        </div>
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="heroHeading">
+    <div class="hero__text reveal" style="--delay:0">
+      <span class="hero__eyebrow">Chartered Accountants &amp; Business Advisors · Est. 1912</span>
+      <h1 class="hero__headline" id="heroHeading">Get Serious About&nbsp;Your Growth</h1>
+      <p class="hero__sub">You're building something ambitious. You deserve a financial partner who knows your numbers, believes in your vision, and pushes your thinking.</p>
+      <div class="hero__actions">
+        <button class="btn btn--primary js-cta" aria-label="Book your free consultation">Book Your Free Consultation</button>
+        <button class="btn btn--ghost js-cta" aria-label="Download the free guide">Get the Free Guide</button>
       </div>
-      <div class="hero-image-container">
-        <img src="images/hero.jpg" alt="Professional accountants reviewing financial strategy" class="hero-image" loading="eager">
+    </div>
+    <div class="hero__image-panel">
+      <img src="images/hero.jpg" alt="A business owner reviewing strategy documents with confidence" class="hero__img" loading="eager" fetchpriority="high">
+      <div class="hero__img-fade" aria-hidden="true"></div>
+    </div>
+
+    <!-- Trust strip inside hero -->
+    <div class="hero__trust reveal" style="--delay:2" aria-label="Trust credentials">
+      <div class="trust-item">
+        <span class="trust-item__value">Est.&nbsp;1912</span>
+        <span class="trust-item__label">114 years of partnership</span>
+      </div>
+      <div class="trust-sep" aria-hidden="true"></div>
+      <div class="trust-item">
+        <span class="trust-item__value">4.9&nbsp;&#9733;</span>
+        <span class="trust-item__label">Google Rating · 46 reviews</span>
+      </div>
+      <div class="trust-sep" aria-hidden="true"></div>
+      <div class="trust-item">
+        <span class="trust-item__value">Chartered</span>
+        <span class="trust-item__label">Fully qualified accountants</span>
+      </div>
+      <div class="trust-sep" aria-hidden="true"></div>
+      <div class="trust-item">
+        <span class="trust-item__value">FCA Regulated</span>
+        <span class="trust-item__label">Highest professional standards</span>
       </div>
     </div>
   </section>
 
-  <!-- Problem Section -->
-  <section class="problem-section" id="problem">
-    <div class="container">
-      <div class="section-header">
-        <h2>Running a Growing Business is Overwhelming</h2>
-      </div>
-      <div class="problem-grid">
-        <div class="problem-card external-problem">
-          <div class="problem-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2L15.09 8.26H22L17.55 12.5L19.64 18.76L12 14.5L4.36 18.76L6.45 12.5L2 8.26H8.91L12 2Z"/>
-            </svg>
-          </div>
-          <h3>External Problem</h3>
-          <p>Swamped with complexity — tax, cashflow, compliance, strategy all competing for attention</p>
-        </div>
-        <div class="problem-card internal-problem">
-          <div class="problem-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
-            </svg>
-          </div>
-          <h3>Internal Problem</h3>
-          <p>Quiet anxiety of not having someone who truly understands your business and ambitions</p>
-        </div>
-        <div class="problem-card philosophical-problem">
-          <div class="problem-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
-              <polyline points="13 2 13 9 20 9"/>
-            </svg>
-          </div>
-          <h3>Philosophical Problem</h3>
-          <p>Ambitious business owners deserve more than compliance. They deserve a genuine partnership.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Guide Section (Trust & Authority) -->
-  <section class="guide-section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <h2>Your Trusted Financial Partner</h2>
-        <p class="section-subtitle">We get it. We've worked with hundreds of ambitious SME owners just like you.</p>
+  <!-- ============ PROBLEM SECTION ============ -->
+  <section class="problem" aria-labelledby="problemHeading">
+    <div class="problem__inner container">
+      <div class="problem__header reveal" style="--delay:0">
+        <span class="section-label section-label--light">The Challenge</span>
+        <h2 id="problemHeading">Running a Growing Business is Overwhelming</h2>
+        <p class="problem__intro">The busier you get, the more you lose sight of where you're going. Tax obligations grow. Strategy gets crowded out. And the financial clarity you need to make confident decisions? It feels further away than ever.</p>
       </div>
 
-      <!-- Trust Badges -->
-      <div class="trust-badges-grid">
-        <div class="badge badge-primary">
-          <div class="badge-content">
-            <div class="badge-number">114</div>
-            <div class="badge-label">Years of Partnership</div>
-            <div class="badge-subtitle">Est. 1912</div>
+      <div class="problem__grid">
+        <div class="problem-card reveal" style="--delay:0">
+          <div class="problem-card__num" aria-hidden="true">01</div>
+          <div class="problem-card__body">
+            <h3 class="problem-card__title">You're swamped</h3>
+            <p>Tax, cashflow, compliance, strategy — all competing for attention at once. The more you take on, the more you lose sight of where you're going.</p>
           </div>
         </div>
-        <div class="badge badge-secondary">
-          <div class="badge-content">
-            <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-            </svg>
-            <div class="badge-label">Chartered Accountants</div>
+        <div class="problem-card problem-card--offset reveal" style="--delay:1">
+          <div class="problem-card__num" aria-hidden="true">02</div>
+          <div class="problem-card__body">
+            <h3 class="problem-card__title">Quiet anxiety</h3>
+            <p>There's a nagging feeling underneath it all. Without someone truly in your corner, you worry you're missing opportunities — or making costly mistakes you won't discover until it's too late.</p>
           </div>
         </div>
-        <div class="badge badge-tertiary">
-          <div class="badge-content">
-            <div class="badge-number">4.9★</div>
-            <div class="badge-label">Google Rating</div>
-            <div class="badge-subtitle">46 verified reviews</div>
-          </div>
-        </div>
-        <div class="badge badge-quaternary">
-          <div class="badge-content">
-            <svg class="badge-icon" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-2.12-2.58c-.3-.37-.84-.37-1.14 0-.32.37-.32.96 0 1.33l2.72 3.25c.3.37.84.37 1.14 0l3.34-4.25c.32-.38.32-.96 0-1.33-.3-.38-.84-.38-1.14 0z"/>
-            </svg>
-            <div class="badge-label">FCA Regulated</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Team Section -->
-      <div class="team-section">
-        <h3>Meet the Team</h3>
-        <div class="team-grid">
-          <div class="team-member">
-            <div class="member-avatar">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
-            </div>
-            <h4>Jonathan Crook</h4>
-            <p>Director</p>
-          </div>
-          <div class="team-member">
-            <div class="member-avatar">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
-            </div>
-            <h4>Ian Meaburn</h4>
-            <p>Director</p>
-          </div>
-          <div class="team-member">
-            <div class="member-avatar">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
-            </div>
-            <h4>Paul Windmill</h4>
-            <p>Director</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Values Section -->
-      <div class="values-section">
-        <h3>Our Values</h3>
-        <div class="values-grid">
-          <div class="value-item">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
-                <polyline points="13 2 13 9 20 9"/>
-              </svg>
-            </div>
-            <h4>Get Off the Fence</h4>
-            <p>Make decisive decisions with confidence and clarity</p>
-          </div>
-          <div class="value-item">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L15.09 8.26H22L17.55 12.5L19.64 18.76L12 14.5L4.36 18.76L6.45 12.5L2 8.26H8.91L12 2Z"/>
-              </svg>
-            </div>
-            <h4>Achieve High Standards</h4>
-            <p>Excellence in everything we do for our clients</p>
-          </div>
-          <div class="value-item">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-              </svg>
-            </div>
-            <h4>Enjoy Your Work</h4>
-            <p>Take pleasure in meaningful partnerships and impact</p>
-          </div>
-          <div class="value-item">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
-              </svg>
-            </div>
-            <h4>Grow Support & Challenge</h4>
-            <p>Push boundaries while providing genuine backing</p>
+        <div class="problem-card reveal" style="--delay:2">
+          <div class="problem-card__num" aria-hidden="true">03</div>
+          <div class="problem-card__body">
+            <h3 class="problem-card__title">You deserve better</h3>
+            <p>Ambitious business owners deserve more than compliance. They deserve a genuine partnership — someone who knows their numbers, believes in their vision, and pushes their thinking.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>What Our Clients Say</h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-text">"Myers Clark have been absolutely brilliant. From day one, they've understood what we're trying to achieve. They don't just file the numbers — they challenge us, they guide us, and they've helped us make strategic decisions that have genuinely moved the needle. Highly recommended."</p>
-          <div class="testimonial-author">
-            <p class="author-name">Adrian McMullan</p>
-            <p class="author-title">Lightbulb Analytics Ltd</p>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="testimonial-text">"We were drowning in spreadsheets and unsure if we were even on track financially. Myers Clark brought everything into focus. In six months, we had clarity on our profit margins, identified £40k in annual tax savings, and completely restructured how we manage our finances."</p>
-          <div class="testimonial-author">
-            <p class="author-name">Sarah Chen</p>
-            <p class="author-title">Chen Manufacturing, Director</p>
+  <!-- ============ GUIDE SECTION ============ -->
+  <section class="guide" id="about" aria-labelledby="guideHeading">
+    <div class="guide__inner container">
+      <div class="guide__split">
+        <div class="guide__copy reveal" style="--delay:0">
+          <span class="section-label">Who We Are</span>
+          <h2 id="guideHeading">We're Serious About Your Ambitions. Not Serious People.</h2>
+          <p>We've worked with hundreds of ambitious SME owners just like you. We know what it's like to build something, to grow it, to feel the weight of financial complexity on top of everything else.</p>
+          <p>You need someone who speaks your language. Someone who challenges your thinking and genuinely wants to see you succeed. That's why we're here — this is a relationship, not a transaction.</p>
+          <div class="guide__values">
+            <div class="value-item reveal" style="--delay:1">
+              <span class="value-item__dot" aria-hidden="true"></span>
+              <span class="value-item__text"><strong>Get off the fence</strong> — Clear decisions. Forward momentum.</span>
+            </div>
+            <div class="value-item reveal" style="--delay:2">
+              <span class="value-item__dot" aria-hidden="true"></span>
+              <span class="value-item__text"><strong>Achieve high standards</strong> — In everything we do.</span>
+            </div>
+            <div class="value-item reveal" style="--delay:3">
+              <span class="value-item__dot" aria-hidden="true"></span>
+              <span class="value-item__text"><strong>Enjoy your work</strong> — Business should be satisfying, not draining.</span>
+            </div>
+            <div class="value-item reveal" style="--delay:4">
+              <span class="value-item__dot" aria-hidden="true"></span>
+              <span class="value-item__text"><strong>Grow support and challenge</strong> — We push your thinking when you need it.</span>
+            </div>
           </div>
         </div>
-
-        <div class="testimonial-card">
-          <div class="stars">
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="star filled" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <div class="guide__authority reveal" style="--delay:1">
+          <div class="authority-panel">
+            <div class="authority-badge">
+              <span class="authority-badge__value">114</span>
+              <span class="authority-badge__label">Years serving Watford businesses</span>
+            </div>
+            <div class="authority-badge">
+              <span class="authority-badge__value">4.9&nbsp;&#9733;</span>
+              <span class="authority-badge__label">Google rating from 46 verified reviews</span>
+            </div>
+            <div class="authority-badge">
+              <span class="authority-badge__value">ICAEW</span>
+              <span class="authority-badge__label">Members &amp; FCA Regulated</span>
+            </div>
           </div>
-          <p class="testimonial-text">"Growing a tech business is chaotic. You're focused on product and clients, and suddenly finance becomes this overwhelming thing you're neglecting. Myers Clark took that off my plate."</p>
-          <div class="testimonial-author">
-            <p class="author-name">Mark Richardson</p>
-            <p class="author-title">Richardson Digital, Founder</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3-Step Plan Section -->
-  <section class="plan-section" id="plan">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Simple Three-Step Process</h2>
-        <p class="section-subtitle">From consultation to partnership — clear, straightforward, and transparent</p>
-      </div>
-      <div class="plan-steps">
-        <div class="step-card">
-          <div class="step-number">1</div>
-          <h3>Free Consultation</h3>
-          <p>Book a free 30-minute consultation. We listen. No pressure, no sales pitch — just genuine conversation about where you are and where you want to be.</p>
-          <div class="step-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="step-connector"></div>
-
-        <div class="step-card">
-          <div class="step-number">2</div>
-          <h3>Strategic Review</h3>
-          <p>We dive deeper into your finances, identify what's working, what could be optimised, and where the real opportunities lie. You'll have clarity on the numbers that matter.</p>
-          <div class="step-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"/>
-              <polyline points="12 12 20 7.5"/>
-              <polyline points="12 12 12 21"/>
-              <polyline points="12 12 4 7.5"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="step-connector"></div>
-
-        <div class="step-card">
-          <div class="step-number">3</div>
-          <h3>Ongoing Partnership</h3>
-          <p>Monthly reviews, proactive tax planning, and quarterly strategy sessions. You're no longer alone in managing your finances — we're in your corner, pushing your thinking forward.</p>
-          <div class="step-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
+          <div class="directors">
+            <p class="directors__label">Led by our directors</p>
+            <div class="directors__list">
+              <div class="director-card">
+                <div class="director-card__avatar" aria-hidden="true">JC</div>
+                <div>
+                  <p class="director-card__name">Jonathan Crook</p>
+                  <p class="director-card__role">Director</p>
+                </div>
+              </div>
+              <div class="director-card">
+                <div class="director-card__avatar" aria-hidden="true">IM</div>
+                <div>
+                  <p class="director-card__name">Ian Meaburn</p>
+                  <p class="director-card__role">Director</p>
+                </div>
+              </div>
+              <div class="director-card">
+                <div class="director-card__avatar" aria-hidden="true">PW</div>
+                <div>
+                  <p class="director-card__name">Paul Windmill</p>
+                  <p class="director-card__role">Director</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services-section" id="services">
-    <div class="container">
-      <div class="section-header">
-        <h2>Our Services</h2>
-        <p class="section-subtitle">Comprehensive accounting solutions designed for ambitious SME owners</p>
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" aria-labelledby="testimonialsHeading">
+    <div class="testimonials__inner container">
+      <div class="testimonials__header reveal" style="--delay:0">
+        <span class="section-label">Client Stories</span>
+        <h2 id="testimonialsHeading">Real Stories from Real Clients</h2>
       </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
-              <polyline points="13 2 13 9 20 9"/>
-            </svg>
-          </div>
-          <h3>Cloud Accounting & Bookkeeping</h3>
-          <p>Real-time financial data at your fingertips. Streamlined, organised, and accessible whenever you need clarity.</p>
-        </div>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"/>
-              <polyline points="12 12 20 7.5"/>
-              <polyline points="12 12 12 21"/>
-              <polyline points="12 12 4 7.5"/>
-            </svg>
-          </div>
-          <h3>Tax Planning & Compliance</h3>
-          <p>Proactive tax strategies that keep you compliant and optimised. We identify savings opportunities you might otherwise miss.</p>
-        </div>
+      <div class="testimonials__layout">
+        <blockquote class="testimonial testimonial--featured reveal" style="--delay:0">
+          <div class="testimonial__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__quote">"Myers Clark have been absolutely brilliant. From day one, they've understood what we're trying to achieve. They don't just file the numbers — they challenge us, they guide us, and they've helped us make strategic decisions that have genuinely moved the needle. Highly recommended."</p>
+          <footer class="testimonial__author">
+            <strong>Adrian McMullan</strong>
+            <span>Lightbulb Analytics Ltd</span>
+          </footer>
+        </blockquote>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-              <polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
-          </div>
-          <h3>Landlord & Property Tax</h3>
-          <p>Specialised support for property investors and landlords. Navigate complex tax positions with confidence.</p>
-        </div>
+        <div class="testimonials__secondary">
+          <blockquote class="testimonial reveal" style="--delay:1">
+            <div class="testimonial__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial__quote">"We were drowning in spreadsheets and unsure if we were even on track financially. Myers Clark brought everything into focus. In six months, we had clarity on our profit margins, identified &pound;40k in annual tax savings, and completely restructured how we manage our finances. They're not just accountants — they're strategic partners."</p>
+            <footer class="testimonial__author">
+              <strong>Sarah Chen</strong>
+              <span>Director, Chen Manufacturing</span>
+            </footer>
+          </blockquote>
 
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
-              <polyline points="17 21 17 13 7 13 7 21"/>
-              <polyline points="7 3 7 8 15 8"/>
-            </svg>
+          <blockquote class="testimonial reveal" style="--delay:2">
+            <div class="testimonial__stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial__quote">"Growing a tech business is chaotic. Myers Clark took that off my plate — not just handling the compliance, but actually helping me understand where we stand and what to do next. That clarity has been invaluable."</p>
+            <footer class="testimonial__author">
+              <strong>Mark Richardson</strong>
+              <span>Founder, Richardson Digital</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLAN SECTION ============ -->
+  <section class="plan" aria-labelledby="planHeading">
+    <div class="plan__inner container">
+      <div class="plan__header reveal" style="--delay:0">
+        <span class="section-label">How It Works</span>
+        <h2 id="planHeading">Three Steps to Your Strategic Partnership</h2>
+        <p>Getting started is simple. No jargon, no bureaucracy. Just clarity.</p>
+      </div>
+      <div class="plan__steps">
+        <div class="plan-step reveal" style="--delay:0">
+          <div class="plan-step__num" aria-hidden="true">01</div>
+          <div class="plan-step__body">
+            <h3>Free Consultation</h3>
+            <p>Book a free 30-minute session. We listen, understand your business and goals. No pressure. No sales pitch. Just genuine conversation.</p>
+          </div>
+        </div>
+        <div class="plan-step__connector" aria-hidden="true"></div>
+        <div class="plan-step reveal" style="--delay:1">
+          <div class="plan-step__num" aria-hidden="true">02</div>
+          <div class="plan-step__body">
+            <h3>Strategic Review</h3>
+            <p>We dive into your finances and tax position. We identify what's working, what could be optimised, and where the opportunities lie.</p>
+          </div>
+        </div>
+        <div class="plan-step__connector" aria-hidden="true"></div>
+        <div class="plan-step reveal" style="--delay:2">
+          <div class="plan-step__num" aria-hidden="true">03</div>
+          <div class="plan-step__body">
+            <h3>Partnership</h3>
+            <p>We build a strategic plan together. Monthly reviews, proactive tax planning, quarterly strategy sessions. You're no longer managing finances alone.</p>
+          </div>
+        </div>
+      </div>
+      <div class="plan__cta reveal" style="--delay:3">
+        <button class="btn btn--primary js-cta" aria-label="Book your free consultation now">Book Your Free Consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES SECTION ============ -->
+  <section class="services" id="services" aria-labelledby="servicesHeading">
+    <div class="services__inner container">
+      <div class="services__header reveal" style="--delay:0">
+        <span class="section-label">What We Do</span>
+        <h2 id="servicesHeading">We Specialise in the Financial &amp; Tax Needs of Ambitious SMEs</h2>
+      </div>
+      <div class="services__bento">
+        <div class="service-tile service-tile--featured reveal" style="--delay:0">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Business Strategy &amp; Advisory</h3>
+          <p>More than accounting — genuine strategic partnership. We help you make confident decisions, plan for growth, and build something lasting.</p>
+        </div>
+        <div class="service-tile reveal" style="--delay:1">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Cloud Accounting &amp; Bookkeeping</h3>
+          <p>Real-time visibility of your finances. Modern systems that work with your business, not against it.</p>
+        </div>
+        <div class="service-tile reveal" style="--delay:2">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          </div>
+          <h3>Tax Planning &amp; Compliance</h3>
+          <p>Strategic tax planning to keep more of what you earn. Done right, on time, every time.</p>
+        </div>
+        <div class="service-tile reveal" style="--delay:1">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Landlord &amp; Property Tax</h3>
+          <p>Specialist support for property investors. Optimising returns while managing the complexity.</p>
+        </div>
+        <div class="service-tile reveal" style="--delay:2">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
           <h3>Charity Accounting</h3>
-          <p>Expert accounting and regulatory compliance specifically for charitable organisations. Trusted by mission-driven organisations.</p>
+          <p>Specialist knowledge in not-for-profit accounting and compliance. We understand the unique challenges.</p>
         </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="3" width="7" height="7"/>
-              <rect x="14" y="3" width="7" height="7"/>
-              <rect x="14" y="14" width="7" height="7"/>
-              <rect x="3" y="14" width="7" height="7"/>
-            </svg>
+        <div class="service-tile reveal" style="--delay:3">
+          <div class="service-tile__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
           </div>
           <h3>Service Charge Accounting</h3>
-          <p>Transparent, accurate service charge accounting for building management and maintenance funds.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <polyline points="12 6 12 12 16 14"/>
-            </svg>
-          </div>
-          <h3>Business Strategy & Advisory</h3>
-          <p>Go beyond compliance. We challenge your thinking, identify growth opportunities, and help you make confident strategic decisions.</p>
+          <p>Dedicated expertise managing and accounting for service charges — clean, compliant, professional.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stakes Section -->
-  <section class="stakes-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>What Happens If You Don't Act?</h2>
-        <p class="section-subtitle">The cost of staying where you are</p>
-      </div>
-      <div class="stakes-content">
-        <div class="stakes-list">
-          <div class="stakes-item">
-            <div class="stakes-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
-              </svg>
-            </div>
-            <h3>Finances Stay Opaque</h3>
-            <p>Without proper strategy and oversight, you're flying blind. Cash flow surprises could catch you off-guard.</p>
-          </div>
-          <div class="stakes-item">
-            <div class="stakes-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
-              </svg>
-            </div>
-            <h3>Decisions Based on Gut Feel</h3>
-            <p>Without data-driven insights, strategic decisions become guesses. Some will work out. Others won't.</p>
-          </div>
-          <div class="stakes-item">
-            <div class="stakes-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
-              </svg>
-            </div>
-            <h3>Miss Tax-Saving Opportunities</h3>
-            <p>Tax planning isn't an afterthought. Without a partner proactively looking ahead, you're leaving money on the table.</p>
-          </div>
-          <div class="stakes-item">
-            <div class="stakes-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
-              </svg>
-            </div>
-            <h3>Competitors Pull Ahead</h3>
-            <p>While they're optimising every aspect of their business, you're staying stagnant. Growth stalls.</p>
-          </div>
-          <div class="stakes-item">
-            <div class="stakes-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
-              </svg>
-            </div>
-            <h3>Costly Mistakes Happen</h3>
-            <p>Regulatory errors, compliance oversights, or strategic missteps can be far more expensive than professional support.</p>
-          </div>
+  <!-- ============ STAKES SECTION ============ -->
+  <section class="stakes" aria-labelledby="stakesHeading">
+    <div class="stakes__inner container">
+      <div class="stakes__split">
+        <div class="stakes__copy reveal" style="--delay:0">
+          <span class="section-label section-label--light">The Risk of Standing Still</span>
+          <h2 id="stakesHeading">Without the Right Partner, the Gaps Add Up</h2>
+          <p>Many ambitious business owners keep limping along without proper financial strategy. Without a real partner, here's what typically happens:</p>
+          <ul class="stakes__list">
+            <li class="reveal" style="--delay:1">Strategic decisions made on gut feel instead of numbers</li>
+            <li class="reveal" style="--delay:2">Tax-saving opportunities missed — often worth thousands per year</li>
+            <li class="reveal" style="--delay:3">Finances staying opaque while competitors pull ahead</li>
+            <li class="reveal" style="--delay:4">Growing complexity without the right structure to handle it</li>
+            <li class="reveal" style="--delay:5">Founder burnout from managing admin that should be handled for you</li>
+          </ul>
+        </div>
+        <div class="stakes__callout reveal" style="--delay:2">
+          <p class="stakes__callout-quote">"You didn't build your business just to spin your wheels. You have ambitions. Without the right partner, you're leaving opportunity on the table."</p>
+          <button class="btn btn--light js-cta" aria-label="Book your free consultation">Book Your Free Consultation</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Success Section -->
-  <section class="success-section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Imagine This: Three Months In</h2>
-        <p class="section-subtitle">What it feels like when you have a real financial partner</p>
+  <!-- ============ SUCCESS SECTION ============ -->
+  <section class="success" aria-labelledby="successHeading">
+    <div class="success__inner container">
+      <div class="success__header reveal" style="--delay:0">
+        <span class="section-label">The Transformation</span>
+        <h2 id="successHeading">Imagine Waking Up on Monday Without Financial Anxiety</h2>
       </div>
-      <div class="success-content">
-        <div class="success-list">
-          <div class="success-item">
-            <div class="success-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </div>
-            <h3>Your Finances Are Clear</h3>
-            <p>You understand your profit margins, cashflow, and key metrics. No more guesswork. Complete clarity on the numbers that matter.</p>
+      <div class="success__grid">
+        <div class="success-card reveal" style="--delay:0">
+          <div class="success-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
-          <div class="success-item">
-            <div class="success-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </div>
-            <h3>You Make Strategic Decisions with Confidence</h3>
-            <p>Data-driven insights mean your decisions are grounded in reality. You're moving forward with conviction, not uncertainty.</p>
+          <h3>Clarity, not fog</h3>
+          <p>Your finances are clear. You can see exactly where you stand — revenue, profit, cash position. No more guessing. No more anxiety.</p>
+        </div>
+        <div class="success-card reveal" style="--delay:1">
+          <div class="success-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           </div>
-          <div class="success-item">
-            <div class="success-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </div>
-            <h3>Your Tax Is Optimised</h3>
-            <p>Proactive planning means you're paying what you should — not a penny more. Every opportunity is identified and acted upon.</p>
+          <h3>Confident decisions</h3>
+          <p>You're making strategic business decisions with confidence. You can invest wisely, hire that person, expand that service — because the numbers back it up.</p>
+        </div>
+        <div class="success-card reveal" style="--delay:2">
+          <div class="success-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-          <div class="success-item">
-            <div class="success-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </div>
-            <h3>You Have Someone in Your Corner</h3>
-            <p>You're not alone anymore. Monthly reviews and quarterly strategy sessions mean someone is always pushing your thinking forward.</p>
+          <h3>Tax optimised</h3>
+          <p>You're not paying a pound more than you need to. Your structure is tight. You've got a clear tax strategy for the year. You sleep better because you know it's right.</p>
+        </div>
+        <div class="success-card reveal" style="--delay:3">
+          <div class="success-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <div class="success-item">
-            <div class="success-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </div>
-            <h3>You're Building Something Meaningful</h3>
-            <p>With finances sorted and clarity achieved, you can focus on what you do best. Growing, innovating, and building the future.</p>
-          </div>
+          <h3>A partner in your corner</h3>
+          <p>Every month, you sit down for a strategic review. It's not admin — it's partnership. Someone who knows your business, challenges your thinking, and wants you to win.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Final CTA Section -->
-  <section class="final-cta-section">
-    <div class="container">
-      <h2>Ready to Get Serious About Your Growth?</h2>
-      <p>It starts with a conversation. Book a free 30-minute consultation with one of our directors.</p>
-      <div class="final-cta-buttons">
-        <button class="cta-button cta-primary cta-large" aria-label="Book your free consultation">Book Your Free Consultation</button>
-        <p class="cta-phone-text">Or call <a href="tel:01923224411" class="cta-phone-link">01923 224411</a></p>
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta" aria-labelledby="finalCtaHeading">
+    <div class="final-cta__inner container">
+      <div class="final-cta__content reveal" style="--delay:0">
+        <h2 id="finalCtaHeading">Ready to Get Serious About Your Growth?</h2>
+        <p>You didn't build your business to manage it alone. You deserve a partner who knows your numbers, believes in your vision, and pushes your thinking.</p>
+        <p class="final-cta__sub">Let's talk about what's possible for your business.</p>
+        <div class="final-cta__actions">
+          <button class="btn btn--light js-cta" aria-label="Book your free consultation">Book Your Free Consultation</button>
+          <a href="tel:01923224411" class="final-cta__phone">or call <strong>01923 224411</strong></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>Myers Clark Chartered Accountants</h4>
-          <p class="footer-address">Suite 7a, Building 6<br>Croxley Park<br>Hatters Lane<br>Watford WD18 8YH</p>
-          <p class="footer-phone"><a href="tel:01923224411">01923 224411</a></p>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact" role="contentinfo">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <img src="images/logo.svg" alt="Myers Clark Chartered Accountants" class="footer__logo">
+          <p>Myers Clark Chartered Accountants has been serving Watford businesses for over 114 years. Strategic financial guidance for ambitious SMEs across Hertfordshire and the UK.</p>
+          <div class="footer__badges">
+            <span class="footer-badge">Est. 1912</span>
+            <span class="footer-badge">FCA Regulated</span>
+            <span class="footer-badge">Chartered</span>
+          </div>
         </div>
-
-        <div class="footer-section">
+        <div class="footer__links">
           <h4>Quick Links</h4>
-          <ul class="footer-links">
+          <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">Who We Are</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><button class="footer__cta-link js-cta">Book a Consultation</button></li>
           </ul>
         </div>
-
-        <div class="footer-section">
-          <h4>Directors</h4>
-          <p>Jonathan Crook<br>Ian Meaburn<br>Paul Windmill</p>
-        </div>
-
-        <div class="footer-section">
-          <h4>Credentials</h4>
-          <p>Chartered Accountants<br>FCA Regulated<br>Est. 1912</p>
+        <div class="footer__contact">
+          <h4>Get In Touch</h4>
+          <address>
+            <p>Suite 7a, Building 6<br>Croxley Park, Hatters Lane<br>Watford WD18 8YH<br>Hertfordshire, UK</p>
+            <p><a href="tel:01923224411">01923 224411</a></p>
+          </address>
+          <p class="footer__directors">Directors: Jonathan Crook, Ian Meaburn, Paul Windmill</p>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p class="footer-credit">Demo built by Dreamfree · dreamfree.co.uk</p>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Myers Clark Chartered Accountants. All rights reserved. FCA Regulated | Chartered Accountants | Est. 1912</p>
+        <p class="footer__credit">Demo built by <a href="https://dreamfree.co.uk" target="_blank" rel="noopener">Dreamfree</a> &middot; dreamfree.co.uk</p>
       </div>
     </div>
   </footer>
 
-  <!-- Demo Modal -->
-  <div class="modal" id="demoModal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog">
-    <div class="modal-backdrop"></div>
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close modal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"/>
-          <line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
-      <h2 id="modalTitle" class="modal-title">This Is a Demo Website</h2>
-      <p class="modal-body">This site was built speculatively to show Myers Clark what their website could look like. If you're interested in discussing this further, get in touch with Daniel at Dreamfree.</p>
-      <div class="modal-buttons">
-        <a href="tel:07786556885" class="modal-button modal-button-primary">Call Daniel: 07786 556 885</a>
-        <a href="mailto:daniel@dreamfree.co.uk?subject=I'm interested in discussing the demo website for Myers Clark" class="modal-button modal-button-secondary">Email Daniel</a>
+  <!-- ============ DEMO MODAL ============ -->
+  <div class="modal-backdrop" id="modalBackdrop" role="presentation" aria-hidden="true"></div>
+  <div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc" hidden>
+    <button class="modal__close" id="modalClose" aria-label="Close modal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal__body">
+      <div class="modal__icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      </div>
+      <h2 id="modalTitle">This Is a Demo Website</h2>
+      <p id="modalDesc">This site was built speculatively to show <strong>Myers Clark</strong> what their website could look like. If you're interested in discussing this further, get in touch with Daniel at Dreamfree.</p>
+      <div class="modal__actions">
+        <a href="tel:07786556885" class="btn btn--primary modal__btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.99-1.99a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Daniel: 07786 556 885
+        </a>
+        <a href="mailto:daniel@dreamfree.co.uk?subject=I'm interested in discussing the demo website for Myers Clark" class="btn btn--outline modal__btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email Daniel
+        </a>
       </div>
     </div>
   </div>
