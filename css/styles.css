@@ -898,12 +898,12 @@ address {
   color: var(--accent);
 }
 
-.service-tile--featured h3 {
+.service-tile.service-tile--featured h3 {
   color: #fff;
 }
 
-.service-tile--featured p {
-  color: rgba(245, 243, 239, 0.72);
+.service-tile.service-tile--featured p {
+  color: rgba(245, 243, 239, 0.88);
 }
 
 .service-tile__icon {
@@ -1056,6 +1056,13 @@ address {
   justify-content: center;
   color: var(--accent);
   margin-bottom: var(--sp-5);
+}
+
+.success-card__icon--pound {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .success-card h3 {
